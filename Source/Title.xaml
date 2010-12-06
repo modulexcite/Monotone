@@ -1,0 +1,419 @@
+<Canvas 
+	x:Name="Part1" 
+	xmlns="http://schemas.microsoft.com/client/2007" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Width="600" 
+	Height="400" 
+	Background="#00000000">
+
+	<Canvas.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform ScaleX="1" ScaleY="1"/>
+			<SkewTransform AngleX="0" AngleY="0"/>
+			<RotateTransform Angle="0"/>
+			<TranslateTransform X="0" Y="0"/>
+		</TransformGroup>
+	</Canvas.RenderTransform>
+
+	<Canvas.Triggers>
+		<EventTrigger RoutedEvent="Canvas.Loaded">
+			<BeginStoryboard>
+				<Storyboard>
+					<DoubleAnimation Storyboard.TargetName="rectangle11" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:00.00" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle12" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:00.42" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle13" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:00.85" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle14" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:01.28" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle21" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:01.71" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle22" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:02.14" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle23" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:02.57" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle24" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:02.99" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle31" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:03.42" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle32" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:03.85" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle33" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:04.28" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle34" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:04.71" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle41" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:05.14" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle42" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:05.57" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle43" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:05.99" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle44" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:06.42" Duration="00:00:00.21" />
+
+					<DoubleAnimation Storyboard.TargetName="rectangle11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" From="50" To="0" BeginTime="00:00:00.00" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle12" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" From="50" To="0" BeginTime="00:00:00.42" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle13" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" From="50" To="0" BeginTime="00:00:00.85" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle14" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" From="50" To="0" BeginTime="00:00:01.28" Duration="00:00:00.21" />
+
+					<DoubleAnimation Storyboard.TargetName="rectangle11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0.25" To="1" BeginTime="00:00:00.00" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0.25" To="1" BeginTime="00:00:00.00" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle12" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0.25" To="1" BeginTime="00:00:00.42" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle12" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0.25" To="1" BeginTime="00:00:00.42" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle13" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0.25" To="1" BeginTime="00:00:00.85" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle13" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0.25" To="1" BeginTime="00:00:00.85" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle14" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0.25" To="1" BeginTime="00:00:01.28" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle14" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0.25" To="1" BeginTime="00:00:01.28" Duration="00:00:00.21" />
+
+					<DoubleAnimation Storyboard.TargetName="rectangle31" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" From="50" To="0" BeginTime="00:00:03.42" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle32" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" From="50" To="0" BeginTime="00:00:03.85" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle33" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" From="50" To="0" BeginTime="00:00:04.28" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle34" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" From="50" To="0" BeginTime="00:00:04.71" Duration="00:00:00.21" />
+
+					<DoubleAnimation Storyboard.TargetName="rectangle31" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0.25" To="1" BeginTime="00:00:03.42" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle31" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0.25" To="1" BeginTime="00:00:03.42" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle32" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0.25" To="1" BeginTime="00:00:03.85" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle32" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0.25" To="1" BeginTime="00:00:03.85" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle33" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0.25" To="1" BeginTime="00:00:04.28" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle33" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0.25" To="1" BeginTime="00:00:04.28" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle34" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0.25" To="1" BeginTime="00:00:04.71" Duration="00:00:00.21" />
+					<DoubleAnimation Storyboard.TargetName="rectangle34" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0.25" To="1" BeginTime="00:00:04.71" Duration="00:00:00.21" />
+
+					<DoubleAnimation Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0" To="8" BeginTime="00:00:00.00" Duration="00:00:00.42" />
+					<DoubleAnimation Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0" To="8" BeginTime="00:00:00.00" Duration="00:00:00.42" />
+					<DoubleAnimation Storyboard.TargetName="ellipse1" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:00.00" Duration="00:00:00.21" />
+
+					<DoubleAnimation Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" From="0" To="8" BeginTime="00:00:06.85" Duration="00:00:00.42" />
+					<DoubleAnimation Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" From="0" To="8" BeginTime="00:00:06.85" Duration="00:00:00.42" />
+					<DoubleAnimation Storyboard.TargetName="ellipse2" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:06.85" Duration="00:00:00.42" />
+
+					<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="grid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+						<SplineDoubleKeyFrame KeyTime="00:00:06.800000" Value="0"/>
+						<SplineDoubleKeyFrame KeyTime="00:00:06.900000" Value="90"/>
+					</DoubleAnimationUsingKeyFrames>
+
+					<!--
+					<DoubleAnimation Storyboard.TargetName="rectangle11" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle11" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle12" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle12" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle13" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle13" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle14" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle14" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle21" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle21" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle22" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle22" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle23" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle23" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle24" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle24" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle31" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle31" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle32" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle32" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle33" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle33" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle34" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle34" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle41" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle41" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle42" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle42" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle43" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle43" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle44" Storyboard.TargetProperty="RadiusX" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					<DoubleAnimation Storyboard.TargetName="rectangle44" Storyboard.TargetProperty="RadiusY" From="10" To="0" BeginTime="00:00:06.80" Duration="00:00:00.10" />
+					-->
+				</Storyboard>
+			</BeginStoryboard>
+			<BeginStoryboard>
+				<Storyboard BeginTime="00:00:06.8500000">
+					<DoubleAnimation Storyboard.TargetName="monotone" Storyboard.TargetProperty="Opacity" From="0" To="1" BeginTime="00:00:00.00" Duration="00:00:00.00" />
+					<ColorAnimation Storyboard.TargetName="rectangle41" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:00.00" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle14" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:00.00" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle22" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:00.42" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle33" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:00.42" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle31" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:00.85" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle24" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:00.85" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle11" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:01.28" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle44" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:01.28" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle23" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:01.71" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle42" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:01.71" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle34" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:02.14" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle12" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:02.14" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle21" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:02.57" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle43" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:02.57" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle32" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:02.99" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="rectangle13" Storyboard.TargetProperty="(Shape.Fill).Color" BeginTime="00:00:02.99" Duration="00:00:00.10" From="#ff000000" To="#ffffffff"/>
+					<ColorAnimation Storyboard.TargetName="Part1" Storyboard.TargetProperty="(Panel.Background).Color" BeginTime="00:00:03.42" Duration="00:00:02.13" From="#ff000000" To="#ffffffff"/>
+					<DoubleAnimation Storyboard.TargetName="Part1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" BeginTime="00:00:05.99" Duration="00:00:00.85" From="0" To="-600" />
+				</Storyboard>
+			</BeginStoryboard>
+		</EventTrigger>
+	</Canvas.Triggers>
+
+	<Ellipse x:Name="ellipse1" RenderTransformOrigin="0.5,0.5" Fill="#00000000" Stroke="#FFffffff" StrokeThickness="10" Width="300" Height="300" Canvas.Left="150" Canvas.Top="50" Opacity="0">
+		<Ellipse.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="0"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Ellipse.RenderTransform>
+	</Ellipse>
+
+	<Ellipse x:Name="ellipse2" RenderTransformOrigin="0.5,0.5" Fill="#00000000" Stroke="#FFffffff" StrokeThickness="10" Width="300" Height="300" Canvas.Left="150" Canvas.Top="50" Opacity="0">
+		<Ellipse.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="0"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Ellipse.RenderTransform>
+	</Ellipse>
+
+	<Canvas x:Name="grid" Width="252" Height="252" Canvas.Left="172" Canvas.Top="74" RenderTransformOrigin="0.5,0.5">
+		<Canvas.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform ScaleX="1" ScaleY="1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="0"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Canvas.RenderTransform>
+
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="1" Fill="#00000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle11" Width="60" Height="60">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#ff000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle12" Width="60" Height="60" Canvas.Left="64">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#ff000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle13" Width="60" Height="60" Canvas.Left="128">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#00000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle14" Width="60" Height="60" Canvas.Left="192">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#00000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle21" Width="60" Height="60" Canvas.Top="64">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#ff000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle22" Width="60" Height="60" Canvas.Left="64" Canvas.Top="64">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#ff000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle23" Width="60" Height="60" Canvas.Left="128" Canvas.Top="64">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#00000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle24" Width="60" Height="60" Canvas.Left="192" Canvas.Top="64">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#00000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle31" Width="60" Height="60" Canvas.Top="128">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#ff000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle32" Width="60" Height="60" Canvas.Left="64" Canvas.Top="128">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#ff000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle33" Width="60" Height="60" Canvas.Left="128" Canvas.Top="128">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#00000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle34" Width="60" Height="60" Canvas.Left="192" Canvas.Top="128">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#00000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle41" Width="60" Height="60" Canvas.Top="192">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#ff000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle42" Width="60" Height="60" Canvas.Left="64" Canvas.Top="192">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#ff000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle43" Width="60" Height="60" Canvas.Left="128" Canvas.Top="192">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+		<Rectangle RenderTransformOrigin="0.5,0.5" Opacity="0" Fill="#00000000" Stroke="#FFFFFFFF" StrokeThickness="3" RadiusX="10" RadiusY="10" x:Name="rectangle44" Width="60" Height="60" Canvas.Left="192" Canvas.Top="192">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+	</Canvas>
+
+	<Canvas x:Name="monotone" Width="600" Height="400" Canvas.Left="0" Canvas.Top="0" Opacity="0">
+		<Path RenderTransformOrigin="0.5,0.5" Fill="#FF000000" Stretch="Fill" StrokeThickness="0" x:Name="O" Width="40" Height="40" Canvas.Left="246" Canvas.Top="148" Data="F1 M11,5 C7.6862917,5 5,7.6862917 5,11 L5,29 C5,32.313709 7.6862917,35 11,35 L29,35 C32.313709,35 35,32.313709 35,29 L35,11 C35,7.6862917 32.313709,5 29,5 L11,5 z M10,0 L30,0 C35.522846,0 40,4.4771523 40,10 L40,30 C40,35.522846 35.522846,40 30,40 L10,40 C4.4771523,40 0,35.522846 0,30 L0,10 C0,4.4771523 4.4771523,0 10,0 z">
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path RenderTransformOrigin="0.5,0.5" Fill="#FF000000" Stretch="Fill" StrokeThickness="0" x:Name="O_Copy" Width="40" Height="40" Canvas.Left="374" Canvas.Top="148" Data="F1 M11,5 C7.6862917,5 5,7.6862917 5,11 L5,29 C5,32.313709 7.6862917,35 11,35 L29,35 C32.313709,35 35,32.313709 35,29 L35,11 C35,7.6862917 32.313709,5 29,5 L11,5 z M10,0 L30,0 C35.522846,0 40,4.4771523 40,10 L40,30 C40,35.522846 35.522846,40 30,40 L10,40 C4.4771523,40 0,35.522846 0,30 L0,10 C0,4.4771523 4.4771523,0 10,0 z">
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path RenderTransformOrigin="0.5,0.5" Fill="#FF000000" Stretch="Fill" StrokeThickness="0" x:Name="O_Copy1" Width="40" Height="40" Canvas.Left="246" Canvas.Top="213" Data="F1 M11,5 C7.6862917,5 5,7.6862917 5,11 L5,29 C5,32.313709 7.6862917,35 11,35 L29,35 C32.313709,35 35,32.313709 35,29 L35,11 C35,7.6862917 32.313709,5 29,5 L11,5 z M10,0 L30,0 C35.522846,0 40,4.4771523 40,10 L40,30 C40,35.522846 35.522846,40 30,40 L10,40 C4.4771523,40 0,35.522846 0,30 L0,10 C0,4.4771523 4.4771523,0 10,0 z">
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path RenderTransformOrigin="0.50000000299537,0.499994574702428" Fill="#FF000000" Stretch="Fill" StrokeThickness="0" x:Name="N" Width="40" Height="40" Canvas.Left="310" Canvas.Top="148" Data="F1 M10,0 L30,0 C35.522846,3.5762787E-07 40,4.4771042 40,9.9998913 L40,14.5 40,21.1 40,29.999672 40,38.466999 40,40 35,40 35,38.466999 35,28.999683 35,21.1 35,17.699808 35,14.5 35,10.99988 C35,7.6862082 32.313709,4.9999461 29,4.9999466 L11,4.9999466 C7.6862922,4.9999461 5.0000005,7.6862082 5.0000005,10.99988 L5.0000005,17.699808 5.0000005,28.999683 5.0000005,38.466999 5,38.466999 5,40 0,40 0,38.466999 0,29.999672 0,21.1 0,14.5 0,9.9998913 C2.3962951E-07,4.4771042 4.4771528,3.5762787E-07 10,0 z">
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path RenderTransformOrigin="0.50000000299537,0.499994574702428" Fill="#FF000000" Stretch="Fill" StrokeThickness="0" x:Name="N_Copy" Width="40" Height="40" Canvas.Left="310" Canvas.Top="213" Data="F1 M10,0 L30,0 C35.522846,3.5762787E-07 40,4.4771042 40,9.9998913 L40,14.5 40,21.1 40,29.999672 40,38.466999 40,40 35,40 35,38.466999 35,28.999683 35,21.1 35,17.699808 35,14.5 35,10.99988 C35,7.6862082 32.313709,4.9999461 29,4.9999466 L11,4.9999466 C7.6862922,4.9999461 5.0000005,7.6862082 5.0000005,10.99988 L5.0000005,17.699808 5.0000005,28.999683 5.0000005,38.466999 5,38.466999 5,40 0,40 0,38.466999 0,29.999672 0,21.1 0,14.5 0,9.9998913 C2.3962951E-07,4.4771042 4.4771528,3.5762787E-07 10,0 z">
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path RenderTransformOrigin="0.50000000299537,0.499994574702428" Fill="#FF000000" Stretch="Fill" StrokeThickness="0" x:Name="M" Width="40" Height="40" Canvas.Left="182" Canvas.Top="148" Data="F1 M10,0 L17.5,0 22.5,0 30,0 C35.522846,3.5762787E-07 40,4.4771042 40,9.9998913 L40,14.5 40,21.1 40,29.999672 40,38.466999 40,40 35,40 35,38.466999 35,28.999683 35,21.1 35,17.699808 35,14.5 35,10.99988 C35,7.6862082 32.313709,4.9999461 29,4.9999466 L22.5,4.9999466 22.5,20 17.5,20 17.5,4.9999466 11,4.9999466 C7.6862922,4.9999461 5.0000005,7.6862082 5.0000005,10.99988 L5.0000005,17.699808 5.0000005,28.999683 5.0000005,38.466999 5,38.466999 5,40 0,40 0,38.466999 0,29.999672 0,21.1 0,14.5 0,9.9998913 C2.3962951E-07,4.4771042 4.4771528,3.5762787E-07 10,0 z">
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="0"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path RenderTransformOrigin="0.50000000299537,0.499994574702428" Fill="#FF000000" Stretch="Fill" StrokeThickness="0" x:Name="E" Width="40" Height="40" Canvas.Left="374" Canvas.Top="213" Data="F1 M10,0 L17.5,0 22.5,0 30,0 C35.522846,3.5762787E-07 40,4.4771042 40,9.9998913 L40,14.5 40,21.1 40,29.999672 40,38.466999 40,40 35,40 35,38.466999 35,28.999683 35,21.1 35,17.699808 35,14.5 35,10.99988 C35,7.6862082 32.313709,4.9999461 29,4.9999466 L22.5,4.9999466 22.5,20 17.5,20 17.5,4.9999466 11,4.9999466 C7.6862922,4.9999461 5.0000005,7.6862082 5.0000005,10.99988 L5.0000005,17.699808 5.0000005,28.999683 5.0000005,38.466999 5,38.466999 5,40 0,40 0,38.466999 0,29.999672 0,21.1 0,14.5 0,9.9998913 C2.3962951E-07,4.4771042 4.4771528,3.5762787E-07 10,0 z">
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Rectangle Fill="#FF000000" Stroke="#FF000000" StrokeThickness="0" RadiusX="0" RadiusY="0" Width="40" Height="5" Canvas.Left="182" Canvas.Top="213"/>
+		<Rectangle Fill="#FF000000" Stroke="#FF000000" StrokeThickness="0" RadiusX="0" RadiusY="0" Width="40" Height="5" Canvas.Left="182" Canvas.Top="230.5" RenderTransformOrigin="0.5,0.5">
+			<Rectangle.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="-90"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</Rectangle.RenderTransform>
+		</Rectangle>
+	</Canvas>
+</Canvas>

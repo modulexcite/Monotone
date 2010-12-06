@@ -1,0 +1,45 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8A0D8D0C-018B-4CD8-BBA7-EE702C7C14B2}</ProjectGuid>
+    <Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <AssemblyName>Monotone</AssemblyName>
+    <RootNamespace>Monotone</RootNamespace>
+    <OutputPath>Web\</OutputPath>
+    <OutputType>Library</OutputType>
+    <DefaultClrNameSpace>Monotone</DefaultClrNameSpace>
+    <NoStdLib>true</NoStdLib>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <StartPageUrl>Web\Default.htm</StartPageUrl>
+    <XapOutputs>true</XapOutputs>
+    <XapFilename>Monotone.xap</XapFilename>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <SilverlightManifestTemplate>AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Monotone.Application</SilverlightAppEntry>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight\v2.0\Microsoft.Silverlight.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Net" />
+    <None Include="Web\Default.htm" />
+    <None Include="Web\Monotone.mp3" />
+    <Compile Include="Application.cs" />
+    <Compile Include="Stroposcope.cs" />
+    <Compile Include="Spiral.cs" />
+    <Compile Include="ProgressBar.cs" />
+    <EmbeddedResource Include="End.xaml" />
+    <EmbeddedResource Include="Title.xaml" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
