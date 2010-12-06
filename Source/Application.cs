@@ -13,9 +13,8 @@ namespace Monotone
 	public class Application : System.Windows.Application
 	{
 		private DispatcherTimer timer = new DispatcherTimer();
-		private int part = 0;
 		private WebClient webClient;
-		private ProgressBar progressBar;
+		private int currentPart = 0;
 
 		public Application()
 		{
@@ -30,40 +29,13 @@ namespace Monotone
 
 		private Canvas Root
 		{
-			get
-			{
-				return (Canvas) this.RootVisual;
-			}
+			get { return (Canvas) this.RootVisual; }
 		}
 
 		private void RootVisual_Loaded(object sender, EventArgs e)
 		{
-			this.progressBar = new ProgressBar();
-			Canvas.SetLeft(this.progressBar, 250f);
-			Canvas.SetTop(this.progressBar, 192f);
-			this.Root.Children.Add(this.progressBar);
+			Stream audioStream = this.GetType().Assembly.GetManifestResourceStream("Monotone.Monotone.mp3");
 
-			// Stream audioStream = this.GetType().Assembly.GetManifestResourceStream("Monotone.Web.Monotone.mp3");
-			// this.Start(audioStream);
-
-			this.webClient = new WebClient();
-			this.webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(this.WebClient_DownloadProgressChanged);
-			this.webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(this.WebClient_OpenReadCompleted);
-			this.webClient.OpenReadAsync(new Uri("Monotone.mp3", UriKind.Relative));
-		}
-
-		private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
-		{
-			this.progressBar.Value = e.ProgressPercentage;
-		}
-
-		private void WebClient_OpenReadCompleted(object sender, OpenReadCompletedEventArgs e)
-		{
-			this.Start(e.Result);
-		}
-
-		private void Start(Stream audioStream)
-		{
 			this.Root.Children.Clear();
 
 			MediaElement audio = new MediaElement();
@@ -91,7 +63,7 @@ namespace Monotone
 
 		private void NextPart()
 		{
-			switch (this.part)
+			switch (this.currentPart)
 			{
 				case 0:
 					this.Root.Children.RemoveAt(1);
@@ -120,7 +92,7 @@ namespace Monotone
 					break;
 			}
 
-			this.part++;
+			this.currentPart++;
 		}
 
 		private DependencyObject LoadResource(string resourceName)
