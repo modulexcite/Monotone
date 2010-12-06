@@ -1,5 +1,6 @@
-﻿Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monotone", "Monotone.csproj", "{8A0D8D0C-018B-4CD8-BBA7-EE702C7C14B2}"
 EndProject
 Global
