@@ -34,8 +34,8 @@
     <EmbeddedResource Include="Monotone.mp3" />
     <EmbeddedResource Include="End.xaml" />
     <EmbeddedResource Include="Title.xaml" />
-    <Content Include="Default.htm">
+    <None Include="Default.htm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
 </Project>
