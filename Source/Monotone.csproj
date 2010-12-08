@@ -29,8 +29,6 @@
     <Reference Include="System.Windows" />
     <Reference Include="System.Net" />
     <Compile Include="Application.cs" />
-    <Compile Include="Stroposcope.cs" />
-    <Compile Include="Spiral.cs" />
     <EmbeddedResource Include="Monotone.mp3" />
     <EmbeddedResource Include="End.xaml" />
     <EmbeddedResource Include="Title.xaml" />
