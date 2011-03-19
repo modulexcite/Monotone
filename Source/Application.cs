@@ -18,47 +18,31 @@ namespace Monotone
 
 		public Application()
 		{
-			this.Startup += this.Application_Startup;
+			this.Startup += delegate {
+				this.RootVisual = new Canvas();
+				this.Canvas.Loaded += delegate {
+					MediaElement audioElement = new MediaElement();
+					this.Canvas.Children.Clear();
+					this.Canvas.Children.Add(audioElement);
+					this.Canvas.Children.Add(new Canvas());
+					audioElement.SetSource(this.GetType().Assembly.GetManifestResourceStream("Monotone.Monotone.mp3"));
+					audioElement.MediaOpened += delegate {
+						this.NextPart();
+						this.timer.Interval = new TimeSpan(0, 0, 0, 0, (int)((60f / 140f) * 4 * 4 * 2 * 1000f));
+						this.timer.Tick += delegate {
+							this.timer.Stop();
+							this.NextPart();
+							this.timer.Start();							
+						};
+						this.timer.Start();
+					};
+				};				
+			};
 		}
 
-		private void Application_Startup(object sender, StartupEventArgs args)
-		{
-			this.RootVisual = new Canvas();
-			this.Root.Loaded += this.RootVisual_Loaded;
-		}
-
-		private Canvas Root
+		private Canvas Canvas
 		{
 			get { return (Canvas) this.RootVisual; }
-		}
-
-		private void RootVisual_Loaded(object sender, EventArgs e)
-		{
-			Stream audioStream = this.GetType().Assembly.GetManifestResourceStream("Monotone.Monotone.mp3");
-
-			this.Root.Children.Clear();
-
-			MediaElement audio = new MediaElement();
-			audio.SetSource(audioStream);
-			this.Root.Children.Add(audio);
-			audio.Pause();
-
-			this.Root.Children.Add(new Canvas());
-			this.NextPart();
-
-			audio.Position = new TimeSpan(0);
-			audio.Play();
-
-			this.timer.Interval = new TimeSpan(0, 0, 0, 0, (int)((60f / 140f) * 4 * 4 * 2 * 1000f));
-			this.timer.Tick += new EventHandler(this.Part_Tick);
-			this.timer.Start();
-		}
-
-		private void Part_Tick(object sender, EventArgs e)
-		{
-			this.timer.Stop();
-			this.NextPart();
-			this.timer.Start();
 		}
 
 		private void NextPart()
@@ -66,40 +50,40 @@ namespace Monotone
 			switch (this.currentPart)
 			{
 				case 0:
-					this.Root.Children.RemoveAt(1);
-					this.Root.Children.Add((Canvas) this.LoadResource("Monotone.Title.xaml"));
+					this.Canvas.Children.RemoveAt(1);
+					this.Canvas.Children.Add(this.LoadResource("Monotone.Title.xaml"));
 					break;
 
 				case 1:
-					this.Root.Children.RemoveAt(1);
+					this.Canvas.Children.RemoveAt(1);
 					Spiral spiral = new Spiral();
-					this.Root.Children.Add(spiral);
+					this.Canvas.Children.Add(spiral);
 					spiral.Start();
 					break;
 
 				case 2:
-					((Spiral)this.Root.Children[1]).Stop();
-					this.Root.Children.RemoveAt(1);
+					((Spiral)this.Canvas.Children[1]).Stop();
+					this.Canvas.Children.RemoveAt(1);
 					Stroposcope stroposcope = new Stroposcope();
-					this.Root.Children.Add(stroposcope);
+					this.Canvas.Children.Add(stroposcope);
 					stroposcope.Start();
 					break;
 
 				case 3:
-					((Stroposcope)this.Root.Children[1]).Stop();
-					this.Root.Children.RemoveAt(1);
-					this.Root.Children.Add((Canvas) this.LoadResource("Monotone.End.xaml"));
+					((Stroposcope)this.Canvas.Children[1]).Stop();
+					this.Canvas.Children.RemoveAt(1);
+					this.Canvas.Children.Add(this.LoadResource("Monotone.End.xaml"));
 					break;
 			}
 
 			this.currentPart++;
 		}
 
-		private DependencyObject LoadResource(string resourceName)
+		private Canvas LoadResource(string resourceName)
 		{
 			using (StreamReader reader = new StreamReader(this.GetType().Assembly.GetManifestResourceStream(resourceName)))
 			{
-				return (DependencyObject) XamlReader.Load(reader.ReadToEnd());
+				return (Canvas) XamlReader.Load(reader.ReadToEnd());
 			}
 		}
 
